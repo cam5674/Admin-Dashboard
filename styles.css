@@ -61,7 +61,7 @@ html, body {
     object-fit: contain;
 }
 .dog2 {
-     width: 80px;
+    width: 80px;
     height: 40px;
     overflow: hidden; 
     display: inline-block;
@@ -145,6 +145,7 @@ input.search-bar {
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
+
 }
 
 .title {
@@ -156,6 +157,7 @@ input.search-bar {
     background: #e8f6ff;
     padding: 12px;
     align-items: start;
+    
 }
 
 .announcements {
@@ -175,16 +177,36 @@ input.search-bar {
     background: #ffffff;
     border-radius: 9999px; /* pill shape */
     margin: 0;
+   
 }
 .trending-card {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     background: #fff7e6;
     padding: 12px;
+   
 }
 
 .trending {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    flex-wrap: wrap;
 }
+
+
+.avatar img  {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+.avatar {
+    width: 80px;
+    height: 40px;
+    overflow: hidden; 
+    display: inline-block;
+    margin-left: 12px; 
+}
+
 
