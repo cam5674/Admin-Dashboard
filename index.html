@@ -4,23 +4,37 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="Dashboard">Dashboard</div>
-            <div>Home</div>
-            <div>Profile</div>
-            <div>Messages</div>
-            <div>History</div>
-            <div>Tasks</div>
-            <div>Communities</div>
-            <div>Settings</div>
-            <div>Support</div>
-            <div>Privacy</div>
-        </div>
-        <div class="header">
+        <aside class="sidebar">
+            <div class="display-settings">
+                <div class="Dashboard">Dashboard</div>
+                <nav class="home-options" aria-label="Primary navigation">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Messages</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Tasks</a></li>
+                        <li><a href="#">Communities</a></li>
+                    </ul>
+                </nav>
+                <nav class="settings" aria-label="Settings navigation">
+                    <ul>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+    <header class="header">
             <div class="search">
                 <div class="photo"><img src="img/search-interface-symbol.png"></div>
                     <input class="search-bar" type="text" placeholder="Search" aria-label="Search" />            </div>
@@ -35,8 +49,8 @@
                 <div><button class="updates">upload</button></div>
                 <div><button class="updates">share</button></div>
             </div>
-        </div>
-        <div class="projects">
+    </header>
+    <main class="projects">
             <div class="cards">
                 <p class="title">Article Title</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga hic beatae, velit sit vel perspiciatis! Ipsa, unde reprehenderit dolore exercitationem beatae odio, dolores temporibus consequuntur soluta asperiores velit cum non!</p>
@@ -72,10 +86,25 @@
             <div class="cards trending-card">
                 <div class="trending">
                     <p class="title">Trending</p>
-                    <div class="avatar"> <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Felix" alt="Profile avatar"></div>
-                    <div class="avatar"> <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Aneka" alt="Profile avatar"> </div>
-                    <div class="avatar"> <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?flip=false" alt="Profile avatar"></div>
-                    <div class="avatar"> <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?eyes=bulging,dizzy,eva" alt="Profile avatar" ></div>
+                    
+                    <div class="trend-item"> 
+                        <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Felix" alt="Profile avatar">
+                        <p class="quote">"Enjoying the great weather!"</p>
+                    </div>
+                    <div class="trend-item">
+                        <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Aneka" alt="Profile avatar">
+                        <p class="quote">"Anyone free tonight? I am so bored!"</p>
+                    </div>
+
+                    <div class="trend-item">
+                        <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?flip=false"alt="Profile avatar">
+                        <p class="quote">"I am so hungry! Any recs??"</p>
+                    </div>
+
+                    <div class="trend-item">
+                        <img src="https://api.dicebear.com/9.x/bottts-neutral/svg?eyes=bulging,dizzy,eva" alt="Profile avatar" >
+                        <p class="quote">"I do not recommend Wuthering Heights. It was such a let down!"</p>
+                    </div>
                 </div>
             </div>
                 <div class="cards">
@@ -86,7 +115,7 @@
                 <p class="title">Article Title</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni iste eaque tempore dolorem ducimus odio maxime doloribus magnam iure, sunt explicabo rerum minima quidem possimus. Porro commodi aliquam qui ratione?</p>
             </div>
-        </div>
+    </main>
     </div>
     
 </body>
